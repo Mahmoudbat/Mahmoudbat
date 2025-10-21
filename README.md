@@ -1,11 +1,11 @@
 # 👋 Hey there, I'm Mahmoud!
 
-💻 **IoT & Computer Science Student** | 🚀 Passionate about coding, tinkering, and building cool tech  
+**IoT & Computer Science Student** | 🚀 Passionate about coding, tinkering, and building cool tech  
 I love working on IoT projects, backend systems, and creative tech ideas that bring hardware and software together.
 
 ---
 
-### ⚙️ About Me
+###  About Me
 
 -  Studying **Computer Science** with a focus on **IoT Systems**
 -  Skilled in **C/C++**, **Java**, and **Python**
@@ -15,19 +15,22 @@ I love working on IoT projects, backend systems, and creative tech ideas that br
 
 ---
 
-### 📂 Latest Projects
+###  Latest Projects
 
 <!-- LATEST_REPOS:START -->
 <!-- LATEST_REPOS:END -->
 
-> *(This list updates automatically every day using GitHub Actions!)*
 
 ---
 
 ### 📊 GitHub Stats
 
-![Mahmoud's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mahmoudbat&show_icons=true&theme=github_dark)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Mahmoudbat&layout=compact&theme=github_dark)
+<table>
+  <tr>
+    <td><img src="https://github-readme-stats.vercel.app/api?username=Mahmoudbat&show_icons=true&theme=github_dark" alt="GitHub Stats" /></td>
+    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahmoudbat&layout=compact&theme=github_dark" alt="Top Languages" /></td>
+  </tr>
+</table>
 
 ---
 
