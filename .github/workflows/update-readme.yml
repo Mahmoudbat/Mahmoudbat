@@ -1,16 +1,65 @@
 name: Update README with latest repos
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: '0 * * * *'   # runs at the top of every hour (UTC)
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          comment_tag_name: "LATEST_REPOS"
-          feed_list: "https://github.com/Mahmoudbat?tab=repositories"
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Build latest repos list and update README
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = 'README.md';
+            const markerStart = '<!-- LATEST_REPOS:START -->';
+            const markerEnd = '<!-- LATEST_REPOS:END -->';
+
+            // Fetch user's public repos (sorted by updated, limit to 6)
+            const username = context.repo.owner;
+            const resp = await github.rest.repos.listForUser({
+              username,
+              sort: 'updated',
+              per_page: 6
+            });
+            const repos = resp.data;
+
+            const list = repos.map(r => {
+              const desc = r.description ? ` - ${r.description}` : '';
+              return `- [${r.name}](${r.html_url})${desc}`;
+            }).join('\n');
+
+            if (!fs.existsSync(path)) {
+              core.setFailed(`File ${path} not found`);
+            }
+            const readme = fs.readFileSync(path, 'utf8');
+            const start = readme.indexOf(markerStart);
+            const end = readme.indexOf(markerEnd);
+            if (start === -1 || end === -1) {
+              core.setFailed('Markers not found in README.md');
+            }
+            const before = readme.slice(0, start + markerStart.length);
+            const after = readme.slice(end);
+            const newReadme = `${before}\n${list}\n${after}`;
+            fs.writeFileSync(path, newReadme, 'utf8');
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update latest repos" || echo "No changes to commit"
+          git push
