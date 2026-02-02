@@ -18,6 +18,7 @@ I love working on IoT projects, backend systems, and creative tech ideas that br
 ###  Latest Projects
 
 <!-- LATEST_REPOS:START -->
+- [MyFeed](https://github.com/Mahmoudbat/MyFeed)
 - [Mahmoudbat](https://github.com/Mahmoudbat/Mahmoudbat)
 - [PC-Stats-Monitor](https://github.com/Mahmoudbat/PC-Stats-Monitor) - A real-time PC hardware monitor using a Java backend (OSHI) to serve stats and an ESP32 with an OLED display as a remote client.
 - [retro_console_esp32](https://github.com/Mahmoudbat/retro_console_esp32)
