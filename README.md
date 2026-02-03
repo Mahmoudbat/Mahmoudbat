@@ -18,8 +18,8 @@ I love working on IoT projects, backend systems, and creative tech ideas that br
 ###  Latest Projects
 
 <!-- LATEST_REPOS:START -->
-- [MyFeed](https://github.com/Mahmoudbat/MyFeed) - local gallery with privacy and usability in mind
 - [Mahmoudbat](https://github.com/Mahmoudbat/Mahmoudbat)
+- [MyFeed](https://github.com/Mahmoudbat/MyFeed) - local gallery with privacy and usability in mind
 - [PC-Stats-Monitor](https://github.com/Mahmoudbat/PC-Stats-Monitor) - A real-time PC hardware monitor using a Java backend (OSHI) to serve stats and an ESP32 with an OLED display as a remote client.
 - [retro_console_esp32](https://github.com/Mahmoudbat/retro_console_esp32)
 - [2d-cnc-printer](https://github.com/Mahmoudbat/2d-cnc-printer) - A customizable 2D CNC printer project for hobbyists and makers. Includes  firmware, and control software for building and operating your own 2D CNC machine. Designed for easy assembly and modification, suitable for engraving, drawing, or custom tool mounting.
