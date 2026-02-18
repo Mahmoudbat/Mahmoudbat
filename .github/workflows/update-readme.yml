@@ -14,17 +14,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
       - name: Build latest repos list and update README
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const path = 'README.md';
+            const readmePath = 'README.md';
             const markerStart = '<!-- LATEST_REPOS:START -->';
             const markerEnd = '<!-- LATEST_REPOS:END -->';
 
@@ -42,19 +37,21 @@ jobs:
               return `- [${r.name}](${r.html_url})${desc}`;
             }).join('\n');
 
-            if (!fs.existsSync(path)) {
-              core.setFailed(`File ${path} not found`);
+            if (!fs.existsSync(readmePath)) {
+              core.setFailed(`File ${readmePath} not found`);
+              return;
             }
-            const readme = fs.readFileSync(path, 'utf8');
+            const readme = fs.readFileSync(readmePath, 'utf8');
             const start = readme.indexOf(markerStart);
             const end = readme.indexOf(markerEnd);
             if (start === -1 || end === -1) {
               core.setFailed('Markers not found in README.md');
+              return;
             }
             const before = readme.slice(0, start + markerStart.length);
             const after = readme.slice(end);
             const newReadme = `${before}\n${list}\n${after}`;
-            fs.writeFileSync(path, newReadme, 'utf8');
+            fs.writeFileSync(readmePath, newReadme, 'utf8');
 
       - name: Commit and push changes
         run: |
