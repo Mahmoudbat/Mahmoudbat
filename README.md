@@ -1,6 +1,6 @@
 # Hey there, I'm Mahmoud!
 
-**IoT & Computer Science Student** | 🚀 Passionate about coding, tinkering, and building cool tech  
+**IoT & Computer Science Student** | Passionate about coding, tinkering, and building cool tech  
 I love working on IoT projects, backend systems, and creative tech ideas that bring hardware and software together.
 
 ---
@@ -29,7 +29,7 @@ I love working on IoT projects, backend systems, and creative tech ideas that br
 
 ---
 
-### 📫 Connect with Me
+### Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mahmoud-bataineh-877313326/)  
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?logo=About.me&logoColor=white)](#) *(coming soon...)*   
