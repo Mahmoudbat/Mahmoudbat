@@ -1,9 +1,11 @@
 <div align='center'>
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│  MAHMOUD BATAINEH  //  SOFTWARE × HARDWARE                 │
-└─────────────────────────────────────────────────────────────┘
+ __  __    _    _   _ __  __  ___  _   _ ____
+|  \/  |  / \  | | | |  \/  |/ _ \| | | |  _ \
+| |\/| | / _ \ | |_| | |\/| | | | | | | | | | |
+| |  | |/ ___ \|  _  | |  | | |_| | |_| | |_| |
+|_|  |_/_/   \_\_| |_|_|  |_|\___/ \___/|____/
 ```
 
 <img src='https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&duration=2800&pause=900&color=00C896&center=true&vCenter=true&width=720&lines=computer+science+student;IoT+student;backend+%2B+embedded+systems;building+things+with+code+and+hardware' alt='Typing introduction' />
