@@ -10,7 +10,7 @@
 
 `computer science student` · `IoT student` · `backend development` · `embedded systems`
 
-[![Website](https://img.shields.io/badge/website-mahbat.dev-111827?style=flat-square&logo=googlechrome&logoColor=00C896)](https://mahbat.dev)
+[![Portfolio](https://img.shields.io/badge/portfolio-mahbat.dev-111827?style=flat-square&logo=googlechrome&logoColor=00C896)](https://mahbat.dev)
 [![LinkedIn](https://img.shields.io/badge/linkedin-connect-111827?style=flat-square&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/mahmoud-bataineh-877313326/)
 [![Instagram](https://img.shields.io/badge/instagram-follow-111827?style=flat-square&logo=instagram&logoColor=E4405F)](https://www.instagram.com/mahbat.9/)
 
@@ -99,9 +99,9 @@ interests:
 ## `~/connect`
 
 <p>
-  <a href='https://mahbat.dev'>website</a> ·
-  <a href='https://www.linkedin.com/in/mahmoud-bataineh-877313326/'>LinkedIn</a> ·
-  <a href='https://www.instagram.com/mahbat.9/'>Instagram</a>
+  <a href='https://mahbat.dev'><img src='https://img.shields.io/badge/portfolio-111827?style=for-the-badge&logo=googlechrome&logoColor=00C896' alt='Portfolio' /></a>
+  <a href='https://www.linkedin.com/in/mahmoud-bataineh-877313326/'><img src='https://img.shields.io/badge/LinkedIn-111827?style=for-the-badge&logo=linkedin&logoColor=0A66C2' alt='LinkedIn' /></a>
+  <a href='https://www.instagram.com/mahbat.9/'><img src='https://img.shields.io/badge/Instagram-111827?style=for-the-badge&logo=instagram&logoColor=E4405F' alt='Instagram' /></a>
 </p>
 
 <div align='center'>
